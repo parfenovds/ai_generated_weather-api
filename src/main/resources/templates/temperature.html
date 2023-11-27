@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<h1>Temperature in <span th:text="${cityName}"></span></h1>
+<p th:if="${temperature} != NaN" th:text="'Temperature: ' + ${temperature} + '°C'"></p>
+<p th:if="${temperature} == NaN">Temperature not available</p>
+</body>
+</html>
